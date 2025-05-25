@@ -3,6 +3,13 @@ border: 1px solid black;
 text-align: center;
 }
 
+a.readmore{
+font-size: inherit; 
+font-weight: normal; 
+text-decoration: underline; 
+color: inherit;      
+cursor: pointer;
+}
 
 nav ul{
 display: flex;
@@ -25,20 +32,60 @@ nav a:hover {
 } 
 
 
-
-
-.piest, .aboutme{
+.piest, .aboutme, .lp{
 text-align: left;
 display: flex;
 flex-direction: column;
 margin: auto;
-width: 850px;
+max-width: 900px;
+width: 90%;
 }
-
-
 
 
 footer{
 text-align: center;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.card {
+  max-width: 300px;
+  margin: 30px auto; /* center horizontally and give spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+}
+
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
 }
 
