@@ -1,3 +1,4 @@
+/* HEADER AND FLEX */
 header{
 border: 1px solid black;
 text-align: center;
@@ -24,9 +25,17 @@ margin: 0;
 padding: 0;
 }
 
+.piest, .aboutme, .lp, .contact{
+text-align: left;
+display: flex;
+flex-direction: column;
+margin: auto;
+max-width: 900px;
+width: 90%;
+}
 
 
-
+/* NAVIGATION SECTION */
 nav ul{
 display: flex;
 justify-content: flex-end;
@@ -48,21 +57,13 @@ nav a:hover {
 } 
 
 
-
-.piest, .aboutme, .lp, .contact{
-text-align: left;
-display: flex;
-flex-direction: column;
-margin: auto;
-max-width: 900px;
-width: 90%;
-}
-
-
+/* FOOTER */
 footer{
 text-align: center;
 }
 
+
+/* ABOUTME SECTION */
 
 .card img {
   width: 100%;
@@ -80,11 +81,11 @@ text-align: center;
   overflow: hidden;
   text-align: center;
   background-color: #fff;
-  padding-bottom: 20px; /* control space under everything */
+  padding-bottom: 20px; 
 }
 
 .card h1 {
-  margin: 10px 0 5px 0; /* reduce space around your name */
+  margin: 10px 0 5px 0;
   font-size: 22px;
 }
 
@@ -92,7 +93,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5px; /* reduce space between name and button */
+  margin-top: 5px; 
 }
 
 .button {
