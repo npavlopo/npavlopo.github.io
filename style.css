@@ -1,0 +1,116 @@
+header{
+border: 1px solid black;
+text-align: center;
+}
+
+a.readmore{
+font-size: inherit; 
+font-weight: normal; 
+text-decoration: underline; 
+color: inherit;      
+cursor: pointer;
+}
+
+div.container{
+display: flex;
+flex-direction: column;
+min-height:100vh;
+}
+main{
+flex:1;
+}
+header, footer, main, body{
+margin: 0;
+padding: 0;
+}
+
+
+
+
+nav ul{
+display: flex;
+justify-content: flex-end;
+outline: 1px solid;
+gap: 15px; 
+padding: 5px;
+list-style: none;
+}
+
+nav a{
+text-decoration: none;
+color: inherit;
+padding: 5px;
+}
+
+nav a:hover {
+  color: #005c99;
+  text-decoration: underline;
+} 
+
+
+
+.piest, .aboutme, .lp, .contact{
+text-align: left;
+display: flex;
+flex-direction: column;
+margin: auto;
+max-width: 900px;
+width: 90%;
+}
+
+
+footer{
+text-align: center;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.card {
+  max-width: 300px;
+  margin: 30px auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 20px; /* control space under everything */
+}
+
+.card h1 {
+  margin: 10px 0 5px 0; /* reduce space around your name */
+  font-size: 22px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px; /* reduce space between name and button */
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  margin: 0; /* remove excess margin */
+}
+
+.button:hover {
+  background-color: #333333;
+}
+
+
+
+
+
