@@ -18,10 +18,17 @@
 </header>
 
 <nav>
-<ul>
-<li><a href="index.html">Articles &amp; Projects</li>
-<li><a href="aboutme.html">About me</a></li>
-</ul>
+  <ul class="main-menu">
+    <li><a href="index.html">Home</a></li>
+    <li class="has-submenu">
+      <a href="index.html">Articles &amp; Projects</a>
+      <ul class="submenu">
+        <li><a href="piest.html">Pi estimation with Python</a></li>
+        <li><a href="lp.html">Linguistic Power</a></li>
+      </ul>
+    </li>
+    <li><a href="aboutme.html">About me</a></li>
+  </ul>
 </nav>
 
 <main>
@@ -77,6 +84,28 @@ def calculate_pi(precision, num_trials):
     return average_estimate
 </code>
 </pre>
+
+We start with 100 darts and that gives the value π=3,32.
+<figure class="centered-figure">
+  <img src="pi_100darts.png" alt="pi_100darts">
+  <figcaption>Fig.1 - Pi estimation with 100 darts.</figcaption>
+</figure>
+
+Keep going with 1000 darts and now is π=3,164.
+<figure class="centered-figure">
+  <img src="pi_1000darts.png" alt="pi_1000darts">
+  <figcaption>Fig.2 - Pi estimation with 1000 darts.</figcaption>
+</figure>
+
+We could better so we continue with 100000 darts and pi is closer than ever π=3,13:
+<figure class="centered-figure">
+  <img src="pi_100000darts.png" alt="pi_100000darts">
+  <figcaption>Fig.3 - Pi estimation with 100000 darts.</figcaption>
+</figure>
+<p>
+A little trivia before we close. The first known estimate appears in an Egyptian papyrus, 
+giving the value of π ≈ 3.16. Later, in a text from the Old Testament describing the specifications of one of Solomon’s construction projects, π is given as 3. But the most known case is that of Archimedes, who calculated upper and lower bounds for π, and the average gives π ≈ 3.1418. I used the method proposed by Buffon and Laplace around the 17th century.
+</p>
 </div>
 </main>
 

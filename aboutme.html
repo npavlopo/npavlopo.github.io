@@ -7,6 +7,7 @@
  <title>The Lens Of Nature</title>
  <link rel="icon" href="the_lens_of_nature.ico" type="image/x-icon">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -15,28 +16,37 @@
 <h1>The Lens Of Nature</h1>
 <i>"Narrowing the Gap Between <br>Reality &amp; Ignorance"</i>
 </header>
-
 <nav>
-<ul>
-<li><a href="index.html">Articles &amp; Projects</li>
-<li><a href="aboutme.html">About me</a></li>
-</ul>
+  <ul class="main-menu">
+    <li><a href="index.html">Home</a></li>
+    <li class="has-submenu">
+      <a href="index.html">Articles &amp; Projects</a>
+      <ul class="submenu">
+        <li><a href="piest.html">Pi estimation with Python</a></li>
+        <li><a href="lp.html">Linguistic Power</a></li>
+      </ul>
+    </li>
+    <li><a href="aboutme.html">About me</a></li>
+  </ul>
 </nav>
 
 
 <main>
 <div class="aboutme">
+<h2 id="aboume">About me</h2>
 <p>My name is Nikos. I'm a physicist, born and raised in Thessaloniki. My interests include particle physics, programming languages, and data analysis.</p>
 <p>On this website, I share my programming projects and articles reflecting on our human society. I hope you'll enjoy it and find something that interests you!</p>
 </div>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="card">
   <img src="me.png" alt="Nikos Pavlopoulos" style="width:100%">
   <h1>Nikos Pavlopoulos</h1>
-  <div class="button-container">
-  <a href="contact.html" class="button">Contact</a>
-  </div>
+<div class="button-container">
+  <a href="https://github.com/npavlopo" class="button github" target="_blank">
+  <i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/nikos-pavlopoulos-79b34b240/" class="button linkedin" target="_blank">
+  <i class="fab fa-linkedin"></i></a>
+</div>
 </div>
 </main>
 

@@ -34,27 +34,81 @@ max-width: 900px;
 width: 90%;
 }
 
-
-/* NAVIGATION SECTION */
-nav ul{
-display: flex;
-justify-content: flex-end;
-outline: 1px solid;
-gap: 15px; 
-padding: 5px;
-list-style: none;
+.centered-figure {
+  text-align: center;
 }
 
-nav a{
-text-decoration: none;
-color: inherit;
-padding: 5px;
+.centered-figure img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+
+
+/* NAVIGATION SECTION */
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  outline: 1px solid;
+  gap: 15px;
+  padding: 5px;
+  list-style: none;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 5px;
 }
 
 nav a:hover {
-  color: #005c99;
+  color: #0077B5;
   text-decoration: underline;
-} 
+}
+
+/* Submenu styles */
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0; 
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 5px 0;
+  min-width: 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.submenu li {
+  padding: 0;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background-color: #f0f0f0;
+  color: #0077B5;
+  text-decoration: none;
+}
+
+/* Show submenu on hover */
+.has-submenu:hover .submenu {
+  display: block;
+}
+
 
 
 /* FOOTER */
@@ -97,14 +151,25 @@ text-align: center;
 }
 
 .button {
-  background-color: black;
-  color: white;
-  padding: 8px 16px;
+  padding: 4px 8px;
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
   text-align: center;
-  margin: 0; /* remove excess margin */
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.button.github {
+  background-color: white;
+  color: black;
+  border: 1px solid #000;
+}
+
+.button.linkedin {
+  background-color: white;
+  color: #0077B5;
+  border: 1px solid #0077B5;
 }
 
 .button:hover {
