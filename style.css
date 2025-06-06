@@ -222,20 +222,25 @@ font-weight: bold;
 margin-right: 0.5em;
 }
 
-#term{
-font-family: monospace;
-width: 150px;
-display: inline-block;
-text-align: center;
-transition: opacity 0.5s ease;
-font-family: monospace;
-display: inline-block;
-white-space: nowrap;
+.parent-container {
+  text
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: center;
+}
+
+#term {
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: monospace;
+  transition: opacity 0.5s ease;
 }
 
 @media (max-width: 600px) {
   #term {
+    width: 140px;
     font-size: 14px;
-    width: 150px;
   }
 }
