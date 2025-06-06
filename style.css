@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+body {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 15px;
+}
 /* HEADER AND FLEX */
 header{
-border: 1px solid black;
+border: 1px #00004d;
 text-align: center;
+background-color: #dde4ee;
+color: #000033;
 }
 
 a.readmore{
@@ -20,7 +27,7 @@ min-height:100vh;
 main{
 flex:1;
 }
-header, footer, main, body{
+header, footer, main{
 margin: 0;
 padding: 0;
 }
@@ -31,7 +38,7 @@ display: flex;
 flex-direction: column;
 margin: auto;
 max-width: 900px;
-width: 90%;
+width: 100%;
 }
 
 .centered-figure {
@@ -44,28 +51,33 @@ width: 90%;
   display: inline-block;
 }
 
-
+body {
+  background-color: #eef1f6;
+  color: #000033;
+  margin: 0;
+}
 
 /* NAVIGATION SECTION */
 nav ul {
   display: flex;
   justify-content: flex-end;
-  outline: 1px solid;
   gap: 15px;
   padding: 5px;
   list-style: none;
   position: relative;
+  background-color: #dde4ee;
+  color: #00004d;
 }
 
 nav a {
   text-decoration: none;
   color: inherit;
   padding: 5px;
+  background-color: #dde4ee;
 }
 
 nav a:hover {
   color: #0077B5;
-  text-decoration: underline;
 }
 
 /* Submenu styles */
@@ -95,12 +107,12 @@ nav a:hover {
   display: block;
   padding: 10px;
   color: #333;
+  background-color: #dde4ee;
   white-space: nowrap;
 }
 
 .submenu a:hover {
   background-color: #f0f0f0;
-  color: #0077B5;
   text-decoration: none;
 }
 
@@ -114,6 +126,7 @@ nav a:hover {
 /* FOOTER */
 footer{
 text-align: center;
+background-color: #dde4ee;
 }
 
 
@@ -134,7 +147,7 @@ text-align: center;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  background-color: #fff;
+  background-color: #dde4ee;
   padding-bottom: 20px; 
 }
 
@@ -162,13 +175,13 @@ text-align: center;
 
 .button.github {
   background-color: white;
-  color: black;
+  color: #000033;
   border: 1px solid #000;
 }
 
 .button.linkedin {
   background-color: white;
-  color: #0077B5;
+  color: #0A66C2;
   border: 1px solid #0077B5;
 }
 
@@ -176,6 +189,22 @@ text-align: center;
   background-color: #333333;
 }
 
+#quote{
+	text-align: center;
+	font-style: italic;
+}
+
+#quote::before {
+  content: "«";
+  font-size: 1em;
+  margin-right: 0.1em;
+}
+#quote::after {
+  content: "»";
+  font-size: 1em;
+  vertical-align: bottom;
+  margin-left: 0.1em;
+}
 
 
 

@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8">
  <title>The Lens Of Nature</title>		
- <link rel="icon" href="the_lens_of_nature.ico" type="image/x-icon">
+ <link rel="icon" href="the_lens_of_nature.png" type="image/png">
  <link rel="stylesheet" href="style.css">
 </head>
 
@@ -39,13 +39,65 @@ solving this problem required
 repeated random sampling of points.This is not a Monte Carlo simulation, since we are not examining the behaviour of a physical system. It's a calculation using statistics and
 knowing the outcome in advance.</p>
 <p>We have a circle of radius <em>r</em> inscribed inside a square (with side length 2r). Since the positions of the darts are truly random, the following holds:</p>
-<p style="text-align: center; font-family: monospace; font-size: 1.1em;">
-<strong>darts inside the circle</strong> / <strong>darts inside the square</strong> = 
-area of circle / area of square = 
-πr² / (2r)² = π / 4</p>
+<style>
+  .fraction {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 0.2em;
+  }
+  .fraction > span {
+    display: block;
+    padding: 0;
+  }
+  .fraction .top {
+    border-bottom: 1px solid #000;
+    font-weight: normal;
+  }
+  .fraction .bottom {
+    font-weight: normal;
+  }
+</style>
+
+<p style="text-align: center;">
+  <strong>darts inside the circle</strong> / <strong>darts inside the square</strong> = 
+  area of circle / area of square = 
+  <span class="fraction">
+    <span class="top">πr²</span>
+    <span class="bottom">(2r)²</span>
+  </span> = 
+  <span class="fraction">
+    <span class="top">π</span>
+    <span class="bottom">4</span>
+  </span>
+</p>
 <p>Therefore, the ratio of darts that land inside the circle to the total darts inside the square approximates <em>π/4</em>.From this, we can estimate π as:</p>
-<p style="text-align: center; font-family: monospace; font-size: 1.1em;">
-π ≈ 4 × (darts inside the circle) / (darts inside the square)
+<style>
+  .fraction {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 0.2em;
+  }
+  .fraction > span {
+    display: block;
+    padding: 0;
+  }
+  .fraction .top {
+    border-bottom: 1px solid #000;
+    font-weight: normal;
+  }
+  .fraction .bottom {
+    font-weight: normal;
+  }
+</style>
+
+<p style="text-align: center;">
+  π ≈ 4 × 
+  <span class="fraction">
+    <span class="top">darts inside the circle</span>
+    <span class="bottom">darts inside the square</span>
+  </span>
 </p>
 <p>We assume that the errors are normally distributed, so
 in the last function the loop I've made stops
