@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
 body {
   font-family: 'Source Serif Pro', serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 /* HEADER AND FLEX */
 header{
@@ -114,7 +114,7 @@ nav a:hover {
 }
 
 .submenu a:hover {
-  background-color: #f0f0f0;
+  background-color: #bbc9dd;
   text-decoration: none;
 }
 
@@ -176,19 +176,19 @@ background-color: #dde4ee;
 }
 
 .button.github {
-  background-color: white;
+  background-color: #eef1f6;
   color: #000033;
-  border: 1px solid #000;
+  border: 1px solid #000033;
 }
 
 .button.linkedin {
-  background-color: white;
+  background-color: #eef1f6;
   color: #0A66C2;
   border: 1px solid #0077B5;
 }
 
 .button:hover {
-  background-color: #333333;
+  background-color: #bbc9dd;
 }
 
 #quote{
@@ -208,6 +208,26 @@ background-color: #dde4ee;
   margin-left: 0.1em;
 }
 
+.fade-word {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+.fade-out {
+  opacity: 0;
+}
 
+#live{
+color: #990000;
+font-weight: bold;
+margin-right: 0.5em;
+}
 
+#term{
+font-family: monospace;
+width: 150px;
+display: inline-block;
+text-align: center;
+transition: opacity 0.5s ease;
+font-family: monospace;
 
+}
